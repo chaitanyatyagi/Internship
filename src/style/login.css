@@ -1,0 +1,607 @@
+.login {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-left-navbar {
+    width: 80%;
+    height: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-left-navbar-logo {
+    width: 5%;
+    height: 90%;
+    background-image: url("../images/Subtract.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.login-left-navbar-data {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    width: 91%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login-left-form {
+    width: 55%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login-left-navbarNew {
+    width: 80%;
+    height: 6%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.login-left-form-head {
+    width: 75%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+.login-left-form-data {
+    margin-top: 6%;
+    width: 70%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    color: #7A7A85;
+}
+
+.login-left-form-inputs {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.otp-field {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 48px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #0858F7;
+    border-radius: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #CACACE;
+    text-align: center;
+}
+
+.otp-field:focus {
+    box-shadow: 0px 0px 0px 4px rgba(0, 85, 255, 0.2);
+}
+
+.login-left-form-input-password {
+    width: 320px;
+    height: 46px;
+    display: flex;
+    margin-top: 4%;
+    flex-direction: row;
+}
+
+.login-left-form-next {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 4%;
+}
+
+.login-left-form-next-back {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    color: #0858F7;
+    width: 16%;
+    text-decoration: none;
+}
+
+.login-left-form-next-timer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    color: #CACACE;
+    width: 46%;
+}
+
+.login-left-form-next-timers {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #0858F7;
+    width: 46%;
+    cursor: pointer;
+}
+
+.input1 {
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 24, 27, 0.05);
+    border-radius: 12px;
+    border: 1px solid #D1D1D1;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.input2 {
+    width: 85%;
+    height: 95%;
+    background: rgba(24, 24, 27, 0.05);
+    border: 1px solid #D1D1D1;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    border-right: 0px solid #D1D1D1;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.input-password-logo {
+    width: 15%;
+    height: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid #D1D1D1;
+    border-left: 0px solid #D1D1D1;
+    background: rgba(24, 24, 27, 0.05);
+    background-image: url("../images/icon.png");
+    background-size: 37% 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.login-left-form-button {
+    width: 320px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    background: #0858F7;
+    border-radius: 12px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.login-left-form-forgot {
+    margin-top: 4%;
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #0858F7;
+}
+
+.login-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/final.png");
+    background-size: 85% 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.success-logo {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/Subtract.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.success-data {
+    width: 100%;
+    margin-top: 2%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: #0858F7;
+}
+
+@media(min-width:1100px) and (max-width:1300px) {
+    .otp-field {
+        width: 42px;
+        height: 50px;
+    }
+}
+
+@media(min-width:940px) and (max-width:1100px) {
+    .login-right {
+        background-size: 95% 87%;
+    }
+
+    .login-left-navbar-logo {
+        width: 6%;
+        height: 90%;
+    }
+
+    .otp-field {
+        width: 36px;
+        height: 44px;
+    }
+
+    .login-left-form-data {
+        width: 100%;
+    }
+
+    .login-left-form-head {
+        width: 100%;
+    }
+}
+
+@media(min-width:851px) and (max-width:940px) {
+    .login-right {
+        background-size: 100% 87%;
+    }
+
+    .login-left-navbar-logo {
+        width: 7%;
+        height: 90%;
+    }
+
+    .login-left-form-inputs {
+        width: 100%;
+    }
+
+    .otp-field {
+        width: 36px;
+        height: 44px;
+    }
+
+    .login-left-form-data {
+        width: 100%;
+    }
+
+    .login-left-form-head {
+        width: 100%;
+    }
+}
+
+@media(min-width:750px) and (max-width:850px) {
+    .login-right {
+        background-size: 100% 82%;
+    }
+
+    .login-left-navbar-logo {
+        width: 8%;
+        height: 90%;
+    }
+
+    .login-left-form-input-password {
+        width: 280px;
+        height: 38px;
+    }
+
+    .login-left-form-button {
+        width: 280px;
+        height: 38px;
+    }
+
+    .login-left-form-inputs {
+        width: 100%;
+    }
+
+    .otp-field {
+        width: 32px;
+        height: 40px;
+    }
+
+    .login-left-form-data {
+        width: 100%;
+    }
+
+    .login-left-form-head {
+        width: 100%;
+    }
+}
+
+@media(min-width:751px) {
+    .login-left-navbar-data {
+        display: none;
+    }
+}
+
+@media(max-width:750px) {
+    .login-left {
+        width: 100%;
+    }
+
+    .login-right {
+        display: none;
+    }
+
+    .login-left-navbarNew {
+        display: none;
+    }
+}
+
+@media(max-width:700px) {
+    .login-left-form {
+        width: 60%;
+        align-items: center;
+    }
+
+    .login-left-navbar-logo {
+        width: 5%;
+        height: 90%;
+    }
+}
+
+@media(max-width:600px) {
+    .login-left-form {
+        width: 70%;
+        align-items: center;
+    }
+}
+
+@media(max-width:500px) {
+    .login-left-form {
+        width: 80%;
+        align-items: center;
+    }
+
+    .login-left-navbar-logo {
+        width: 7%;
+        height: 90%;
+    }
+}
+
+@media(max-width:450px) {
+    .login-left-form {
+        width: 90%;
+        align-items: center;
+    }
+}
+
+@media(max-width:380px) {
+    .login-left-form {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media(max-width:350px) {
+    .otp-field {
+        width: 38px;
+        height: 48px;
+    }
+
+    .login-left-form-head {
+        font-size: 25px;
+        width: 90%;
+    }
+
+    .login-left-form-data {
+        font-size: 14px;
+    }
+
+    .login-left-form-next-back {
+        font-size: 14px;
+    }
+
+    .login-left-form-next-timer {
+        font-size: 14px;
+    }
+
+    .login-left-form-next-timers {
+        font-size: 14px;
+    }
+
+    .login-left-navbar-data {
+        font-size: 10px;
+    }
+
+    .login-left-form-forgot {
+        font-size: 14px;
+    }
+
+    .login-left-form-button {
+        font-size: 14px;
+    }
+
+    .login-left-form-input-password {
+        width: 240px;
+        height: 36px;
+    }
+
+    .login-left-form-button {
+        width: 240px;
+        height: 36px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:270px) {
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    .otp-field {
+        width: 28px;
+        height: 38px;
+    }
+
+    .login-left-form-head {
+        font-size: 22px;
+    }
+
+    .login-left-form-data {
+        font-size: 12px;
+    }
+
+    .login-left-form-next-back {
+        font-size: 12px;
+    }
+
+    .login-left-form-next-timer {
+        font-size: 12px;
+    }
+
+    .login-left-form-next-timers {
+        font-size: 12px;
+    }
+
+    .login-left-navbar-data {
+        font-size: 8px;
+    }
+
+    .login-left-form-forgot {
+        font-size: 12px;
+    }
+
+    .login-left-form-button {
+        font-size: 12px;
+    }
+
+    .login-left-navbar-logo {
+        width: 9%;
+        height: 90%;
+    }
+
+    .login-left-form-input-password {
+        width: 190px;
+        height: 31px;
+    }
+
+    .login-left-form-button {
+        width: 190px;
+        height: 31px;
+    }
+}
+
+@media(max-width:200px) {
+    input::placeholder {
+        font-size: 10px;
+    }
+
+    .otp-field {
+        width: 20px;
+        height: 30px;
+    }
+
+    .login-left-form-head {
+        font-size: 19px;
+    }
+
+    .login-left-form-data {
+        font-size: 10px;
+    }
+
+    .login-left-form-next-back {
+        font-size: 10px;
+    }
+
+    .login-left-form-next-timer {
+        font-size: 10px;
+    }
+
+    .login-left-form-next-timers {
+        font-size: 10px;
+    }
+
+    .login-left-form-forgot {
+        font-size: 10px;
+    }
+
+    .login-left-form-button {
+        font-size: 10px;
+    }
+
+    .login-left-form-input-password {
+        width: 150px;
+        height: 27px;
+    }
+
+    .login-left-form-button {
+        width: 150px;
+        height: 27px;
+    }
+}

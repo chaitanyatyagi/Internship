@@ -1,7 +1,11 @@
 import "../style/login.css"
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 export default function Login() {
+
+    const [toggle, setToggle] = useState(false)
+
     return (
         <div className="login">
             <div className="login-left">
@@ -15,8 +19,10 @@ export default function Login() {
                         <input type="email" className="input1" placeholder="Enter Your Email" />
                     </div>
                     <div className="login-left-form-input-password">
-                        <input type="password" className="input2" placeholder="Enter Your Password" />
-                        <div className="input-password-logo"></div>
+                        {
+                            toggle ? <input type="text" className="input2" placeholder="Enter Your Password" /> : <input type="password" className="input2" placeholder="Enter Your Password" />
+                        }
+                        <div className="input-password-logo" onClick={() => setToggle((prevState) => !prevState)}></div>
                     </div>
                     <Link to="/otp-verify" className="login-left-form-button">Next</Link>
                     <div className="login-left-form-forgot">Forgot Your Password?</div>
